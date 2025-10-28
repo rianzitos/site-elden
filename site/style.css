@@ -1,0 +1,294 @@
+@font-face {
+    font-family: 'Elden';
+    src: url("../fonts/Mantinia\ Regular.otf");
+}
+
+@font-face {
+    font-family: 'medieval';
+    src: url("../fonts/MedievalSharp-Regular.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.background {
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+}
+
+.containerGraca {
+    position: absolute;
+    display: flex;
+    border: 2px solid rgba(226, 202, 70, 0.455);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.9), 
+    0 0 40px rgba(212, 175, 55, 0.6);
+    transition: box-shadow .6s ease, transform .3s ease;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    top: 20px;
+    left: 30px;
+}
+
+.containerGraca:hover{
+    box-shadow: 0 0 35px rgba(242, 233, 103, 1),
+                0 0 70px rgba(242, 233, 103, 0.8);
+    transform: scale(1.05);
+}
+
+.graca {
+    width: 160px;
+    height: auto;
+}
+
+.containerLogo {
+    display: flex;
+}
+
+.logo {
+    z-index: 1;
+    width: 710px;
+    height: auto;
+    position: relative;
+    left: 381px;
+}
+
+.containerJogo{
+    position: absolute;
+    top: 250px; /* ajuste conforme necessário */
+    left: 80px; /* ajuste conforme necessário */
+    z-index: 1;
+}
+
+.texto{
+    display: block;
+     width: 100%;    /* Garante o preenchimento total */
+
+    font-family:'Elden', sans-serif;
+    color: rgb(242, 233, 103);
+    font-size: 28px;
+    text-decoration: none;
+
+    padding: 10px 0;
+    transition: all .7s ease;
+    border-radius: 6px;
+}
+
+.containerHist {
+    position: absolute;
+    top: 250px; /* ajuste conforme necessário */
+    left: 1080px; /* ajuste conforme necessário */
+    z-index: 1;
+}
+
+.containerDLC {
+    position: absolute;
+    top: 500px; /* ajuste conforme necessário */
+    left: 1080px; /* ajuste conforme necessário */
+    z-index: 1;
+}
+
+.containerBoss {
+    position: absolute;
+    top: 500px; /* ajuste conforme necessário */
+    left: 80px; /* ajuste conforme necessário */
+    z-index: 1;
+
+    /* display: flex; */
+    /* flex-direction: column; permite novos itens em coluna */
+    /* gap: 10px; espaço entre os itens dentro */
+    
+    /* box-shadow: 0 0 20px rgba(212, 175, 55, 0.9),  */
+            /* 0 0 40px rgba(212, 175, 55, 0.6); */
+
+    /* padding: 20px 30px; */
+    /* border: 1px solid black; A borda desejada */
+    /* border-radius: 10px; */
+    /* background: rgba(0, 0, 0, 0.645); opcional para destacar */
+    /* width: 300px; se ajustar ao conteúdo */
+    /* height: auto; */
+    /* text-align: center; */
+}
+
+.menu-box {
+    display: flex;
+    flex-direction: column; /* permite novos itens em coluna */
+    gap: 10px; /* espaço entre os itens dentro */
+    
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.9), 
+    0 0 40px rgba(212, 175, 55, 0.6);
+    transition: box-shadow .6s ease, transform .3s ease;
+    padding: 20px 30px;
+    border: 1px solid black; /* A borda desejada */
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.645); /* opcional para destacar */
+    width: 300px; /* se ajustar ao conteúdo */
+    height: auto;
+    text-align: center;
+    
+}
+
+.menu-box:hover {
+    box-shadow: 0 0 35px rgba(242, 233, 103, 1),
+                0 0 70px rgba(242, 233, 103, 0.8);
+    transform: scale(1.05);
+}
+
+.containerTitulo {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    left: 510px;
+    top: 50px;
+    border: solid 2px rgba(4, 11, 50, 0.756);
+    width: 450px;
+    height: auto;
+    padding: 10px 20px;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: rgba(2, 2, 24, 0.919);
+    box-shadow: 0 0 35px rgba(66, 90, 211, 0.825),
+                0 0 70px rgba(96, 113, 238, 0.642);
+}
+
+.titulo {
+    color: rgb(249, 251, 253);
+    font-family: 'Elden', sans-serif;
+    font-size: 55px;
+}
+
+.containerMenu {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    left: 240px;
+    top: 100px;
+    padding: 10px 20px;
+    border: solid 2px rgba(4, 11, 50, 0.756);
+    width: 1000px;
+    height: auto;
+    border-radius: 50px;
+    background-color: rgba(2, 2, 24, 0.919);
+    box-shadow: 0 0 35px rgba(66, 90, 211, 0.825),
+                0 0 70px rgba(96, 113, 238, 0.64);
+    
+}
+
+.textoSobre {
+    color: white;
+    font-family: 'medieval', sans-serif;
+    font-size: 28px;
+}
+
+.containerTitboss {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    left: 450px;
+    top: 50px;
+    border: 1px solid black;
+    width: 590px;
+    height: auto;
+    padding: 10px 20px;
+    justify-content: center;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.9), 
+    0 0 40px rgba(212, 175, 55, 0.6);
+    transition: box-shadow .6s ease, transform .3s ease;
+    background: rgba(0, 0, 0, 0.645);
+}
+
+.containerBosses {
+    display: flex;
+    flex-wrap: wrap;         /* permite quebrar linha */
+    position: relative;
+    z-index: 1;
+    gap: 25px;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1100px;       /* limita a largura total */
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.9),
+                0 0 40px rgba(212, 175, 55, 0.6);
+}
+
+.boss {
+    flex: 0 0 calc(33.33% - 20px);  /* garante 3 bosses por linha */
+    text-align: center;
+}
+
+.imgBoss {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.golden {
+    border-radius: 10px;
+    border: solid rgba(242, 233, 103, 0.8) 2px;
+}
+
+.golden:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(242, 233, 103, 1),
+                0 0 50px rgba(242, 233, 103, 0.8);
+}
+
+.tituBoss {
+    color: white;
+    font-family: 'medieval', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.maliketh {
+    border-radius: 10px;
+    border: solid rgba(185, 8, 8, 0.7) 2px;
+}
+
+.maliketh:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(108, 8, 8, 0.812),
+                0 0 50px rgba(102, 7, 7, 0.8);
+}
+
+.radahn {
+    border-radius: 10px;
+    border: solid rgb(103, 10, 224) 2px;
+}
+
+.radahn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgb(93, 0, 255),
+                0 0 50px rgb(113, 31, 235);
+}
+
+.malenia {
+    border-radius: 10px;
+    border: solid rgba(245, 53, 53, 0.949) 2px;
+}
+
+.malenia:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(235, 25, 25, 0.926),
+                0 0 50px rgba(220, 8, 8, 0.886);
+}
+
+.morgott {
+    border-radius: 10px;
+    border: solid rgba(7, 75, 23, 0.825) 2px;
+}
+
+.morgott:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(3, 110, 28, 0.763),
+                0 0 50px rgba(13, 106, 72, 0.679);
+}
